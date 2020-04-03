@@ -1,9 +1,5 @@
-# Crustulum
-Crustulum is a *cheating* add-on for [Cookie Clicker](https://orteil.dashnet.org/cookieclicker/). It enables a variety of features to help those wishing to make aspects of the game easier. Some features provided are also done by other tools or the built in debug menus, however, this add-on simplifies some of those and does not award the "Cheated cookies taste awful" achievement.
-
-I created this add-on because it became tiresome pasting in a few snippets of code every time I reloaded the page. It's mostly for personal use but I am (obviously) sharing it anyway. No warranty of any kind is offered. I added features to this that I do not use so some things may not all be fully tested.
-
-I highly recommend not using all of the features provided as it will pretty much ruin the game if you do. You should just use it to skip parts you find tedious or improve your CpS a little bit. I personally only use the auto clicks regularly. I only use some of the actions on occasion.
+# Crustulum++
+Crustulum is a *cheating* add-on for [Cookie Clicker](https://orteil.dashnet.org/cookieclicker/). It enables a variety of features to help those wishing to make aspects of the game easier. Instead, in Crustulum++, only *some* of the features (mostly the ones inherited from Crustulum) are to be considered 'cheaty'. The 'Cheated cookies taste awful' achievement is given once a cheating action/toggle is used.
 
 ## Features
 
@@ -13,7 +9,7 @@ I highly recommend not using all of the features provided as it will pretty much
 * Compatible with [Cookie Monster](https://github.com/Aktanusa/CookieMonster), recommended to load Crustulum last.
 * Tested only on Chrome.
 
-### Automation
+### [CHEATING] Automation
 The following automation options are available. All options can be toggled on and off at will and default to being off when you first load the add-on.
 * **Auto Click Big Cookie**
   * Clicks the big cookie for you.
@@ -42,7 +38,7 @@ The following automation options are available. All options can be toggled on an
 * **Power Of The Gods**
   * All Pantheon gods will behave as if they are in slot 1 regardless of which slot they are in.
 
-### Actions
+### [CHEATING] Actions
 A variety of actions are also available. These are once off actions and have no lasting effects.
 
 * **Spawn a Golden Cookie**
@@ -71,14 +67,17 @@ A variety of actions are also available. These are once off actions and have no 
 ## How To Use
 To use the add-on simply run the following in the developer console:
 ```javascript
-(function () {Game.LoadMod('https://cdn.jsdelivr.net/gh/Ancyker/Crustulum/Crustulum.js')}());
+(function () {Game.LoadMod('https://cdn.jsdelivr.net/gh/RubenVerg/CrustulumPlusPlus/Crustulum.js')}());
 ```
 Or you can use this bookmarklet:
 ```javascript
-javascript:(function () {Game.LoadMod('https://cdn.jsdelivr.net/gh/Ancyker/Crustulum/Crustulum.js')}());
+javascript:(function () {Game.LoadMod('https://cdn.jsdelivr.net/gh/RubenVerg/CrustulumPlusPlus/Crustulum.js')}());
 ```
 
-Note: jsDelivr is a third party service. Use at your own risk.
+<small>Note: jsDelivr is a third party service. Use at your own risk.</small>
 
 ## Authors & Copyright Stuff
-I wrote all the code myself, though the original Cookie Clicker code was obviously used in some places. I also looked at Cookie Monster for reference on how to make buttons appear in the menu.
+All the additions marked so are by RubenVerg.
+
+### Notice for the original Crustulum
+I wrote all the code [myself](github.com/Ancyker), though the original Cookie Clicker code was obviously used in some places. I also looked at Cookie Monster for reference on how to make buttons appear in the menu.
