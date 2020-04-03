@@ -1,6 +1,8 @@
 # Crustulum++
 Crustulum is a *cheating* add-on for [Cookie Clicker](https://orteil.dashnet.org/cookieclicker/). It enables a variety of features to help those wishing to make aspects of the game easier. Instead, in Crustulum++, only *some* of the features (mostly the ones inherited from Crustulum) are to be considered 'cheaty'. The 'Cheated cookies taste awful' achievement is given once a cheating action/toggle is used.
 
+## NOTE: CURRENTLY CHEATS DON'T GIVE THE ACHIEVEMENT, WILL FIX SOON(TM)
+
 ## Features
 
 ### Basics
@@ -9,7 +11,7 @@ Crustulum is a *cheating* add-on for [Cookie Clicker](https://orteil.dashnet.org
 * Compatible with [Cookie Monster](https://github.com/Aktanusa/CookieMonster), recommended to load Crustulum last.
 * Tested only on Chrome.
 
-### [CHEATING] Automation
+### [CHEATING] Toggleables
 The following automation options are available. All options can be toggled on and off at will and default to being off when you first load the add-on.
 * **Auto Click Big Cookie**
   * Clicks the big cookie for you.
@@ -38,8 +40,16 @@ The following automation options are available. All options can be toggled on an
 * **Power Of The Gods**
   * All Pantheon gods will behave as if they are in slot 1 regardless of which slot they are in.
 
-### [CHEATING] Actions
+## Actions
 A variety of actions are also available. These are once off actions and have no lasting effects.
+
+* **Toys**
+  * Makes toy cookies appear.
+* **Party**
+  * Makes you enter a teenagers' rave party.
+
+### [CHEATING] Actions
+Like actions, but cheaty.
 
 * **Spawn a Golden Cookie**
   * Spawns a golden cookie.
