@@ -10,58 +10,70 @@ let CPP = {
             CPP.OG.UpdateMenu();
             if (Game.onMenu == 'prefs') {
                 let fragment = document.createDocumentFragment();
-                fragment.appendChild(CPP.Menu.heading('Toggleables: Cheating'));
-                fragment.appendChild(CPP.Menu.subheading('Automation'));
-                fragment.appendChild(CPP.Menu.toggleButton('autoClicker', 'Automatically click the big cookie', 'Notice: the mouse can be wherever you want, particles are always summoned but only shown wh'));
-                fragment.appendChild(CPP.Menu.toggleButton('autoGolden', 'Automatically click golden cookies when they appear', 'Whenever a golden/wrath cookie appears, it will be clicked.'));
-                fragment.appendChild(CPP.Menu.toggleButton('autoReindeer', 'Automatically click reindeer', 'Whenever a reindeer appears, it will be clicked.'));
-                fragment.appendChild(CPP.Menu.toggleButton('autoNews', 'Automatically click news', 'Clicks on the news ticker for you (notice: fortunes can\'t appear.)'));
-                fragment.appendChild(CPP.Menu.subheading('Golden Cookies'));
-                fragment.appendChild(CPP.Menu.toggleButton('blockWrath', 'Block Wrath Cookies', 'Prevents wrath cookies from spawning.'));
-                fragment.appendChild(CPP.Menu.subheading('Infinity'));
-                fragment.appendChild(CPP.Menu.toggleButton('infiniteCookies', 'Infinite Cookies', 'Your cookies constantly regenerate.'));
-                fragment.appendChild(CPP.Menu.toggleButton('infiniteMagic', 'Infinite Magic', 'Your Grimoire magic recharges almost instantly'));
-                fragment.appendChild(CPP.Menu.toggleButton('infiniteSwaps', 'Infinite Swaps', 'Your Pantheon swaps regenerates almost instantly.'));
-                fragment.appendChild(CPP.Menu.subheading('Minigames'));
-                fragment.appendChild(CPP.Menu.toggleButton('miracleSpells', 'Miracle Spell™', 'Grimoire spells never fail.'));
-                fragment.appendChild(CPP.Menu.toggleButton('immortalPlants', 'Make Plants Immortal', 'Makes it so plants never wither. Does not affect weeds or fungi.'));
-                fragment.appendChild(CPP.Menu.toggleButton('neverWeeds', 'Never Weed™', 'Makes it so weeds never spawn on their own. You can still plant them and they still may spread.'));
-                fragment.appendChild(CPP.Menu.toggleButton('allGodsActive', 'Pantheon \'R Us', 'All Pantheon gods except for Cyclius will be active in slot one.'));
-                fragment.appendChild(CPP.Menu.toggleButton('allGodsSlotOne', 'Power Of The Gods', 'All Pantheon gods will behave as if they are in slot 1 regardless of which slot they are in.'));
-                fragment.appendChild(CPP.Menu.heading('Actions: Cheating'));
-                fragment.appendChild(CPP.Menu.subheading('Spawning'));
-                fragment.appendChild(CPP.Menu.actionButton('spawnGolden', 'Spawn a Golden Cookie', 'Spawns a random golden cookie.', CPP.Actions.spawnGolden));
-                fragment.appendChild(CPP.Menu.actionButton('spawnGoldenFrenzy', 'Spawn a Frenzy Cookie', 'Spawns a golden cookie with the Frenzy effect.', CPP.Actions.spawnGolden));
-                fragment.appendChild(CPP.Menu.actionButton('spawnGoldenDragonflight', 'Spawn a Dragonflight Cookie', 'Spawns a golden cookie that will cause a dragonflight.', CPP.Actions.spawnGoldenDragonflight));
-                fragment.appendChild(CPP.Menu.actionButton('giveSugarLump', 'Give 1 Sugar Lump', 'Gives you a sugar limp.', CPP.Actions.giveSugarLump));
-                fragment.appendChild(CPP.Menu.actionButton('giveCookies', 'Give Cookies', 'Gives you the most cookies you can have without getting the cheated cookies achievement.', CPP.Actions.giveCookies));
-                fragment.appendChild(CPP.Menu.subheading('Minigames'));
-                fragment.appendChild(CPP.Menu.actionButton('refillMagic', 'Refill Magic', 'Refill all of your Grimoire\'s magic.', CPP.Actions.refillMagic));
-                fragment.appendChild(CPP.Menu.actionButton('refillSwaps', 'Refill Swaps', 'Refill all of your Pantheon\'s swaps', CPP.Actions.refillSwaps));
-                fragment.appendChild(CPP.Menu.subheading('Unlocks'));
-                fragment.appendChild(CPP.Menu.actionButton('unlockAllSeeds', 'Unlock Plant Seeds', 'Unlocks all the plant seeds for your Garden. Does not unlock weeds or fungi.', CPP.Actions.unlockAllSeeds));
-                fragment.appendChild(CPP.Menu.actionButton('unlockAllWeedFungusSeeds', 'Unlock Weed and Fungi Seeds', 'Unlocks all the weed and fungus seeds for the Garden.', CPP.Actions.unlockAllWeedFungusSeeds));
-                fragment.appendChild(CPP.Menu.actionButton('lockAllSeeds', 'Lock All Seeds', 'Locks all the seeds for the Garden except for the starting seed.', CPP.Actions.lockAllSeeds));
-                fragment.appendChild(CPP.Menu.actionButton('unlockAllAchievements', 'Win All Achievements', 'Grants all achievements.', CPP.Actions.achievements));
-                fragment.appendChild(CPP.Menu.actionButton('unlockAllUpgrades', 'Get All Upgrades', 'Unlocks and buys all upgrades.', CPP.Actions.upgrades));
-                fragment.appendChild(CPP.Menu.subheading('Misc'));
-                fragment.appendChild(CPP.Menu.actionButton('removeCheatedCookies', 'Remove Cheat Achievement', 'Remove \'Cheated cookies taste awful\' achievement', CPP.Actions.removeCheatedCookies));
+                fragment.appendChild(CPP.menu.heading('Toggleables'));
+                fragment.appendChild(CPP.menu.subheading('None :('));
+                fragment.appendChild(CPP.menu.heading('Toggleables: Cheating'));
+                fragment.appendChild(CPP.menu.subheading('Automation'));
+                fragment.appendChild(CPP.menu.toggleButton('autoClicker', 'Automatically click the big cookie', 'Notice: the mouse can be wherever you want, particles are always summoned but only shown wh'));
+                fragment.appendChild(CPP.menu.toggleButton('autoGolden', 'Automatically click golden cookies when they appear', 'Whenever a golden/wrath cookie appears, it will be clicked.'));
+                fragment.appendChild(CPP.menu.toggleButton('autoReindeer', 'Automatically click reindeer', 'Whenever a reindeer appears, it will be clicked.'));
+                fragment.appendChild(CPP.menu.toggleButton('autoNews', 'Automatically click news', 'Clicks on the news ticker for you (notice: fortunes can\'t appear.)'));
+                fragment.appendChild(CPP.menu.subheading('Golden Cookies'));
+                fragment.appendChild(CPP.menu.toggleButton('blockWrath', 'Block Wrath Cookies', 'Prevents wrath cookies from spawning.'));
+                fragment.appendChild(CPP.menu.subheading('Infinity'));
+                fragment.appendChild(CPP.menu.toggleButton('infiniteCookies', 'Infinite Cookies', 'Your cookies constantly regenerate.'));
+                fragment.appendChild(CPP.menu.toggleButton('infiniteMagic', 'Infinite Magic', 'Your Grimoire magic recharges almost instantly'));
+                fragment.appendChild(CPP.menu.toggleButton('infiniteSwaps', 'Infinite Swaps', 'Your Pantheon swaps regenerates almost instantly.'));
+                fragment.appendChild(CPP.menu.subheading('Minigames'));
+                fragment.appendChild(CPP.menu.toggleButton('miracleSpells', 'Miracle Spell™', 'Grimoire spells never fail.'));
+                fragment.appendChild(CPP.menu.toggleButton('immortalPlants', 'Make Plants Immortal', 'Makes it so plants never wither. Does not affect weeds or fungi.'));
+                fragment.appendChild(CPP.menu.toggleButton('neverWeeds', 'Never Weed™', 'Makes it so weeds never spawn on their own. You can still plant them and they still may spread.'));
+                fragment.appendChild(CPP.menu.toggleButton('allGodsActive', 'Pantheon \'R Us', 'All Pantheon gods except for Cyclius will be active in slot one.'));
+                fragment.appendChild(CPP.menu.toggleButton('allGodsSlotOne', 'Power Of The Gods', 'All Pantheon gods will behave as if they are in slot 1 regardless of which slot they are in.'));
+                fragment.appendChild(CPP.menu.heading('Actions'));
+                fragment.appendChild(CPP.menu.subheading('Appearance'));
+                fragment.appendChild(CPP.menu.actionButton('summonToys', 'Render toys in the milk', 'A series of draggable cookies appear floating in the milk.', CPP.actions.toys));
+                fragment.appendChild(CPP.menu.actionButton('party', 'Enter the PARTY!', 'MAkes the screen tilt and change color.', CPP.actions.party));
+                fragment.appendChild(CPP.menu.heading('Actions: Cheating'));
+                fragment.appendChild(CPP.menu.subheading('Spawning'));
+                fragment.appendChild(CPP.menu.actionButton('spawnGolden', 'Spawn a Golden Cookie', 'Spawns a random golden cookie.', CPP.actions.spawnGolden));
+                fragment.appendChild(CPP.menu.actionButton('spawnGoldenFrenzy', 'Spawn a Frenzy Cookie', 'Spawns a golden cookie with the Frenzy effect.', CPP.actions.spawnGolden));
+                fragment.appendChild(CPP.menu.actionButton('spawnGoldenDragonflight', 'Spawn a Dragonflight Cookie', 'Spawns a golden cookie that will cause a dragonflight.', CPP.actions.spawnGoldenDragonflight));
+                fragment.appendChild(CPP.menu.actionButton('giveSugarLump', 'Give 1 Sugar Lump', 'Gives you a sugar limp.', CPP.actions.giveSugarLump));
+                fragment.appendChild(CPP.menu.actionButton('giveCookies', 'Give Cookies', 'Gives you the most cookies you can have without getting the cheated cookies achievement.', CPP.actions.giveCookies));
+                fragment.appendChild(CPP.menu.subheading('Minigames'));
+                fragment.appendChild(CPP.menu.actionButton('refillMagic', 'Refill Magic', 'Refill all of your Grimoire\'s magic.', CPP.actions.refillMagic));
+                fragment.appendChild(CPP.menu.actionButton('refillSwaps', 'Refill Swaps', 'Refill all of your Pantheon\'s swaps', CPP.actions.refillSwaps));
+                fragment.appendChild(CPP.menu.subheading('Unlocks'));
+                fragment.appendChild(CPP.menu.actionButton('unlockAllSeeds', 'Unlock Plant Seeds', 'Unlocks all the plant seeds for your Garden. Does not unlock weeds or fungi.', CPP.actions.unlockAllSeeds));
+                fragment.appendChild(CPP.menu.actionButton('unlockAllWeedFungusSeeds', 'Unlock Weed and Fungi Seeds', 'Unlocks all the weed and fungus seeds for the Garden.', CPP.actions.unlockAllWeedFungusSeeds));
+                fragment.appendChild(CPP.menu.actionButton('lockAllSeeds', 'Lock All Seeds', 'Locks all the seeds for the Garden except for the starting seed.', CPP.actions.lockAllSeeds));
+                fragment.appendChild(CPP.menu.actionButton('unlockAllAchievements', 'Win All Achievements', 'Grants all achievements.', CPP.actions.achievements));
+                fragment.appendChild(CPP.menu.actionButton('unlockAllUpgrades', 'Get All Upgrades', 'Unlocks and buys all upgrades.', CPP.actions.upgrades));
+                fragment.appendChild(CPP.menu.subheading('Misc'));
+                fragment.appendChild(CPP.menu.actionButton('removeCheatedCookies', 'Remove Cheat Achievement', 'Remove \'Cheated cookies taste awful\' achievement', CPP.actions.removeCheatedCookies));
 
                 // Unload Crustulum button. Doesn't work if you loaded other add-ons first. We check only for Cookie Monster.
-                if (typeof CM === 'undefined' || CPP.cookieMonsterLoaded) fragment.appendChild(CPP.Menu.actionButton('unloadCrustulum', 'Unload Crustulum++', 'Unloads Crustulum++ (and disables all of it\'s features.)', CPP.Actions.unloadCrustulum));
+                if (typeof CM === 'undefined' || CPP.cookieMonsterLoaded) fragment.appendChild(CPP.menu.actionButton('unloadCrustulum', 'Unload Crustulum++', 'Unloads Crustulum++ (and disables all of it\'s features.)', CPP.actions.unloadCrustulum));
 
-                CPP.PluginHooks.UpdateMenu(fragment);
+                CPP.hooks.UpdateMenu(fragment);
 
                 l('menu').childNodes[2].insertBefore(fragment, l('menu').childNodes[2].childNodes[l('menu').childNodes[2].childNodes.length - 1]);
             }
         },
     },
-    Actions: { // Our action library
+    actions: { // Our action library
+        toys: () => {
+            Game.TOYS = true;
+        },
+        party: () => {
+            if (confirm('Epilepsy warning: Party Mode contains flashing colors and lights, rapidly moving objects and tilting. Do you want to proceed?')) game.PARTY = true;
+        },
         spawnGolden: () => {
             Game.shimmerTypes.golden.time = Game.shimmerTypes.golden.maxTime;
         },
-        spawnGoldenFrenzy: () => CPP.Actions.spawnGoldenFixed('frenzy'),
-        spawnGoldenDragonflight: () => CPP.Actions.spawnGoldenFixed('dragonflight'),
+        spawnGoldenFrenzy: () => CPP.actions.spawnGoldenFixed('frenzy'),
+        spawnGoldenDragonflight: () => CPP.actions.spawnGoldenFixed('dragonflight'),
         spawnGoldenFixed: (type) => {
             let newShimmer = new Game.shimmer('golden', { noWrath: true });
             newShimmer.dur = 10000;
@@ -135,13 +147,13 @@ let CPP = {
                     tick.intervalId = 0;
                 }
             });
-            CPP.Liberate.Game();
-            CPP.PluginHooks.UnloadPlugins();
+            CPP.liberate.Game();
+            CPP.hooks.UnloadPlugins();
             Game.UpdateMenu();
             setTimeout(() => CPP = null, 100);
         },
     },
-    ConfigDefaults: { // The default value for the configs
+    configDefaults: { // The default value for the configs
         'autoClicker': false,
         'autoGolden': false,
         'autoReindeer': false,
@@ -155,22 +167,23 @@ let CPP = {
         'miracleSpells': false,
         'allGodsActive': false,
         'allGodsSlotOne': false,
+        'toys': false
     },
-    Config: {}, // User settings
-    Init: () => { // Initialize the add-on.
+    config: {}, // User settings
+    init: () => { // Initialize the add-on.
         if (!Game || !Game.version || !Game.updateLog) {
             alert('The game isn\'t loaded yet or this isn\'t the game.');
             return;
         }
-        CPP.Hijack.Game();
+        CPP.hijack.Game();
         CPP.loadConfig();
         CPP.initTicks();
         Game.Win('Third-party');
         if (typeof CM === 'object' && typeof Queue !== 'undefined' && typeof jscolor !== 'undefined') CPP.cookieMonsterLoaded = true;
-        CPP.PluginHooks.Init();
+        CPP.hooks.Init();
     },
     cookieMonsterLoaded: false,
-    Menu: {
+    menu: {
         toggleButton: (configParam, text, description) => {
             let div = document.createElement('div'), a = document.createElement('a'), label = document.createElement('label');
             if (!CPP.getConfig(configParam)) a.className = 'option off';
@@ -203,13 +216,13 @@ let CPP = {
             return heading;
         },
         subheading: (text) => {
-            let subheading = CPP.Menu.heading(text);
+            let subheading = CPP.menu.heading(text);
             subheading.style.fontSize = '17px';
             return subheading;
         },
     },
     saveConfig: () => {
-        localStorage.setItem('Crustulum', JSON.stringify(CPP.Config));
+        localStorage.setItem('Crustulum', JSON.stringify(CPP.config));
     },
     loadConfig: () => {
         let config = localStorage.getItem('Crustulum');
@@ -221,14 +234,14 @@ let CPP = {
         }
     },
     getConfig: (configParam) => {
-        if (typeof CPP.Config[configParam] === 'undefined')
-            return CPP.ConfigDefaults[configParam];
-        else return CPP.Config[configParam];
+        if (typeof CPP.config[configParam] === 'undefined')
+            return CPP.configDefaults[configParam];
+        else return CPP.config[configParam];
     },
     setConfig: (configParam, configValue) => {
-        if (configValue === CPP.ConfigDefaults[configParam])
-            delete CPP.Config[configParam];
-        else CPP.Config[configParam] = configValue;
+        if (configValue === CPP.configDefaults[configParam])
+            delete CPP.config[configParam];
+        else CPP.config[configParam] = configValue;
         CPP.saveConfig();
         return CPP.getConfig(configParam);
     },
@@ -243,14 +256,14 @@ let CPP = {
         else
             l(`crustulum-${configParam}`).className = 'option';
     },
-    Liberate: {
+    liberate: {
         Game: () => {
             if (CPP.OG.UpdateMenu) Game.UpdateMenu = CPP.OG.UpdateMenu;
             if (CPP.OG.shimmerPrototypeInit) Game.shimmer.prototype.init = function () {
                 Game.shimmerTypes[this.type].initFunc(this);
             };
-            if (Game.hasGod) CPP.Liberate.hasGod();
-            CPP.Liberate.miniGames();
+            if (Game.hasGod) CPP.liberate.hasGod();
+            CPP.liberate.miniGames();
         },
         miniGames: () => {
             if (Game.Objects['Farm'].minigameLoaded && Game.Objects['Farm'].minigame.plants && Game.Objects['Farm'].minigame.soils) {
@@ -273,7 +286,7 @@ let CPP = {
             else delete Game.hasGod;
         },
     },
-    Hijack: {
+    hijack: {
         Game: () => {
             if (!CPP.OG.UpdateMenu) {
                 CPP.OG.UpdateMenu = Game.UpdateMenu;
@@ -290,9 +303,9 @@ let CPP = {
                     }
                 }
             }
-            if (!CPP.OG.hasGod) CPP.Hijack.hasGod();
+            if (!CPP.OG.hasGod) CPP.hijack.hasGod();
 
-            CPP.Hijack.miniGames();
+            CPP.hijack.miniGames();
         },
         miniGames: () => {
             if (!CPP) return;
@@ -331,12 +344,12 @@ let CPP = {
                 }
             }
 
-            if (retry) setTimeout(CPP.Hijack.miniGames, 1000);
+            if (retry) setTimeout(CPP.hijack.miniGames, 1000);
         },
         hasGod: () => {
             if (!CPP) return;
             if (!Game.Objects['Temple'].minigameLoaded || !Game.Objects['Temple'].minigame.gods) {
-                setTimeout(CPP.Hijack.hasGod, 1000); // We keep running this until we get the real Game.hasGod()
+                setTimeout(CPP.hijack.hasGod, 1000); // We keep running this until we get the real Game.hasGod()
             } else if (!CPP.OG.hasGod && Game.hasGod) {
                 CPP.OG.hasGod = Game.hasGod;
             }
@@ -429,7 +442,7 @@ let CPP = {
             },
         },
     },
-    PluginHooks: {
+    hooks: {
         Init: () => {
             Object.keys(CPP.Plugins).forEach((key) => {
                 let plugin = CPP.Plugins[key];
@@ -467,6 +480,6 @@ if (typeof CrustulumPlugins === 'object') {
 }
 
 // Alternatively, you can set CrustulumInit to false to prevent the Init and set up your plugins after loading the script, remember to call `Crustulum.Init()` afterwards.
-if (typeof CrustulumInit === 'undefined' || CrustulumInit) CPP.Init();
+if (typeof CrustulumInit === 'undefined' || CrustulumInit) CPP.init();
 
 /* cSpell:ignore Crustulum, Toggleables, prefs, minigame, Mult, grimoire, grimoire's, grimoire\'s, Cyclius, dragonflight, Achiev, jscolor */
